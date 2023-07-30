@@ -6,11 +6,12 @@ In this work, I use a novel approach to address GPU memory constraints in the im
 The result I can get from a certain model, since I use the same hyperparameters to train all the networks, some networks might not get the best result from these hyperparameters, you could try yourself by finetuning the hyperparameters to get
 better result.
 
-|Dataset|Network|Params|Inference time (ms)|Runtime Memory on CPU (ms)||Runtime Memory on CUDA (ms)|Top-1 Error|Top-5 Error|Checkpoint path|
+**|Dataset|Network|Params|Inference time (ms)|Runtime Memory on CPU (ms)||Runtime Memory on CUDA (ms)|Top-1 Error|Top-5 Error|Checkpoint path|
+**
 |:-----:|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|Cifar100|Resnet50 (base model)|23705252|167|15.933|6.481|21.24|5.33|?|
-|Cifar100|Resnet50 (pruned model)|14959153|146|15.538|5.456|27.04|8.05|?|
-|Cifar100|Resnet18 (KD from Resnet50)|11220132|61|7.019|2.735|23.95|7.01|?|
+|Cifar100|Resnet50 (base model)|23705252|167|15.933|6.481|21.24|5.33|[resnet50.pth](https://raw.githubusercontent.com/ngtuthanhan/pytorch-cifar100/master/checkpoint/resnet50/Saturday_29_July_2023_05h_48m_46s/resnet50-200-regular.pth)|
+|Cifar100|Resnet50 (pruned model)|14959153|146|15.538|5.456|27.04|8.05|[resnet50.pth](https://raw.githubusercontent.com/ngtuthanhan/pytorch-cifar100/master/checkpoint/resnet50/Sunday_30_July_2023_11h_34m_52s/resnet50-200-regular.pth)|
+|Cifar100|Resnet18 (KD from Resnet50)|11220132|61|7.019|2.735|23.95|7.01|[resnet18.pth](https://raw.githubusercontent.com/ngtuthanhan/pytorch-cifar100/master/checkpoint/resnet18/Sunday_30_July_2023_14h_29m_06s/resnet18-200-regular.pth)|
 
 
 ## Requirements
